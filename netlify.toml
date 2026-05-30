@@ -1,4 +1,14 @@
 [build]
   base = ""
-  publish = "html"
+  publish = "."
   command = ""
+
+[[redirects]]
+  from = "/"
+  to = "/html/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/html/about.html"
+  status = 200
