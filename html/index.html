@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScaleOps — AI-Powered Client Acquisition Systems</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ScaleOps helps businesses generate more clients using AI-driven systems that automate lead capture, follow-ups, and conversions." />
+  <meta name="keywords" content="ScaleOps, AI marketing, Lead Capture automation, Automated Follow-Ups, Client Acquisition Systems" />
+  <meta name="author" content="ScaleOps" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="ScaleOps — AI-Powered Client Acquisition Systems" />
+  <meta property="og:description" content="We build the systems that bring in revenue, automating lead capture and follow-ups 24/7." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+  
+  <!-- External Javascript (Deferred) -->
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Background Particle Network -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Nav -->
+  <header>
+    <nav>
+      <div class="logo" id="mainLogo">
+        <svg width="172" height="44" viewBox="0 0 172 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Signal S mark — Teal & Cyan gradient theme -->
+          <path d="M 38 10 A 18 18 0 0 0 6 10" fill="none" stroke="#0d9488" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+          <path d="M 34 16 A 13 13 0 0 0 10 16" fill="none" stroke="#0d9488" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+          <path d="M 30 22 A 8 8 0 0 0 14 22" fill="none" stroke="#0d9488" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="22" cy="22" r="2.8" fill="#0891b2"/>
+          <path d="M 14 22 A 8 8 0 0 0 30 22" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 10 28 A 13 13 0 0 0 34 28" fill="none" stroke="#0891b2" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+          <path d="M 6 34 A 18 18 0 0 0 38 34" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+          <!-- Wordmark -->
+          <text x="50" y="28" font-family="Sora, sans-serif" font-weight="800" font-size="19" letter-spacing="-0.8" fill="#0f172a">Scale<tspan fill="#0d9488">Ops</tspan></text>
+        </svg>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services" id="navLinkServices">Services</a></li>
+        <li><a href="#system" id="navLinkSystem">How It Works</a></li>
+        <li><a href="#demo" id="navLinkDemo">Demo</a></li>
+        <li><a href="#testimonials" id="navLinkTestimonials">Results</a></li>
+        <li><a href="about.html" id="navLinkAbout">About Us</a></li>
+        <li><a href="#contact" class="nav-cta" id="navLinkCta">Get a Strategy Call</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" id="mobileNavClose" role="button" aria-label="Close menu">✕</span>
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#system" onclick="closeMobileNav()">How It Works</a>
+    <a href="#demo" onclick="closeMobileNav()">Demo</a>
+    <a href="#testimonials" onclick="closeMobileNav()">Results</a>
+    <a href="about.html" onclick="closeMobileNav()">About Us</a>
+    <a href="#contact" onclick="closeMobileNav()">Get a Strategy Call</a>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-grid-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <div class="hero-badge-dot"></div>
+          Full-Stack AI Growth System
+        </div>
+        <h1 class="hero-title fade-up fade-up-d1" id="mainHeading">
+          We Build the Machine<br/>
+          <span class="highlight">That Fills Your Calendar</span><br/>
+          <span class="line-dim">While You Run Your Business</span>
+        </h1>
+        <p class="hero-sub fade-up fade-up-d2">
+          Lead generation, AI automation, high-converting websites, and content — engineered together as one acquisition system. Not pieced together. Built to compound.
+        </p>
+        <div class="hero-actions fade-up fade-up-d3">
+          <a href="#contact" class="btn-primary" id="heroPrimaryCta">
+            Get a Free Strategy Call
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#demo" class="btn-secondary" id="heroSecondaryCta">
+            See It In Action
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats fade-up fade-up-d4">
+          <div class="stat">
+            <div class="stat-num">4×</div>
+            <div class="stat-label">Average pipeline growth</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-num">&lt;60s</div>
+            <div class="stat-label">AI response time</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-num">48h</div>
+            <div class="stat-label">System goes live</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-pad">
+      <div class="services-intro">
+        <div class="services-intro-text fade-up">
+          <p class="section-label">The System</p>
+          <h2 class="section-title">Four levers.<br/>One acquisition engine.</h2>
+          <p class="section-sub">Most agencies sell you a tool. We build you a system where every part works together — content feeds leads, AI converts them, your website closes them.</p>
+        </div>
+        <a href="#contact" class="btn-primary fade-up fade-up-d2" style="white-space:nowrap;height:fit-content" id="servicesCta">
+          Build My System
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up fade-up-d1">
+          <div class="service-num">01</div>
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg></div>
+          <h3 class="service-title">AI Lead Conversion</h3>
+          <div class="service-outcome">↑ 3–5× more booked calls</div>
+          <p class="service-desc">AI that responds to every inbound lead in under 60 seconds — qualifying, nurturing, and booking calls automatically. Works around the clock, never drops the ball.</p>
+          <a href="#contact" class="service-link" id="serviceLink1">
+            Learn more
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card fade-up fade-up-d2">
+          <div class="service-num">02</div>
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3 class="service-title">Conversion-First Websites</h3>
+          <div class="service-outcome">↑ Higher close rate on every visit</div>
+          <p class="service-desc">We don't build pretty websites — we build machines that turn visitors into booked calls. Fast, sharp, and engineered around a single goal: action.</p>
+          <a href="#contact" class="service-link" id="serviceLink2">
+            Learn more
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card fade-up fade-up-d3">
+          <div class="service-num">03</div>
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg></div>
+          <h3 class="service-title">Content That Attracts Buyers</h3>
+          <div class="service-outcome">↑ Consistent inbound traffic</div>
+          <p class="service-desc">Short-form video and brand content built to reach the right audience — not just followers. Every piece is a top-of-funnel asset that feeds the rest of your system.</p>
+          <a href="#contact" class="service-link" id="serviceLink3">
+            Learn more
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card fade-up fade-up-d4">
+          <div class="service-num">04</div>
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <h3 class="service-title">Growth Automation</h3>
+          <div class="service-outcome">↑ Revenue without headcount</div>
+          <p class="service-desc">CRM workflows, follow-up sequences, lead scoring, and pipeline automation — the backend infrastructure that makes sure no opportunity ever slips through.</p>
+          <a href="#contact" class="service-link" id="serviceLink4">
+            Learn more
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works / Live Pipeline -->
+    <section id="system" class="section-pad">
+      <div class="system-grid">
+        <div class="fade-up">
+          <p class="section-label">How It Works</p>
+          <h2 class="section-title">A compounding system,<br/>not a one-time fix</h2>
+          <p class="section-sub" style="margin-bottom:0">We set up the full acquisition engine in 48 hours. Then it compounds — the longer it runs, the better it performs.</p>
+          <div class="system-steps" style="margin-top:44px">
+            <div class="system-step">
+              <div class="system-step-num">01</div>
+              <div class="system-step-content">
+                <h3 class="system-step-title">Attract the right audience</h3>
+                <p class="system-step-desc">Content and targeted outreach pull qualified prospects into your orbit — people who already want what you sell.</p>
+              </div>
+            </div>
+            <div class="system-step">
+              <div class="system-step-num">02</div>
+              <div class="system-step-content">
+                <h3 class="system-step-title">Capture and qualify instantly</h3>
+                <p class="system-step-desc">AI engages every inbound lead within 60 seconds, asks the right questions, and filters out time-wasters before they hit your calendar.</p>
+              </div>
+            </div>
+            <div class="system-step">
+              <div class="system-step-num">03</div>
+              <div class="system-step-content">
+                <h3 class="system-step-title">Convert into booked revenue</h3>
+                <p class="system-step-desc">Automated follow-ups, booking flows, and reminder sequences turn qualified leads into paid clients. You show up — the system does the rest.</p>
+              </div>
+            </div>
+            <div class="system-step">
+              <div class="system-step-num">04</div>
+              <div class="system-step-content">
+                <h3 class="system-step-title">Optimize and scale</h3>
+                <p class="system-step-desc">We track what's working, cut what isn't, and continuously improve every part of the pipeline. Results compound month over month.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="system-visual fade-up fade-up-d2">
+          <div class="pipeline-label">Live Pipeline Dashboard</div>
+          <div class="pipeline-row">
+            <div class="pipeline-item">
+              <div class="pipeline-item-left">
+                <div class="pipeline-dot dot-green"></div>
+                <div class="pipeline-item-name">New inbound leads</div>
+              </div>
+              <div class="pipeline-item-val">+24 this week</div>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipeline-item-left">
+                <div class="pipeline-dot dot-blue"></div>
+                <div class="pipeline-item-name">AI qualified</div>
+              </div>
+              <div class="pipeline-item-val">18 / 24</div>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipeline-item-left">
+                <div class="pipeline-dot dot-purple"></div>
+                <div class="pipeline-item-name">Calls booked</div>
+              </div>
+              <div class="pipeline-item-val">11 calls</div>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipeline-item-left">
+                <div class="pipeline-dot dot-amber"></div>
+                <div class="pipeline-item-name">Deals closed</div>
+              </div>
+              <div class="pipeline-item-val">4 this week</div>
+            </div>
+          </div>
+          <div class="pipeline-total">
+            <div class="pipeline-total-label">Revenue generated</div>
+            <div class="pipeline-total-val">$18,400</div>
+          </div>
+          <p style="font-size:0.72rem;color:var(--muted);margin-top:14px;text-align:center;letter-spacing:0.03em">Sample data · your numbers will vary</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section id="roi-calculator" class="section-pad">
+      <div class="calc-grid">
+        <div class="fade-up">
+          <p class="section-label">Revenue Capture</p>
+          <h2 class="section-title">Calculate the cost of slow response times</h2>
+          <p class="section-sub" style="margin-bottom: 30px;">
+            When leads wait, conversion rates drop by 3x. Drag the sliders to see how much monthly leakage your pipeline currently suffers, and how much annual revenue ScaleOps will capture for you.
+          </p>
+          <div class="calc-card">
+            <div class="calc-slider-group">
+              <div class="calc-slider-header">
+                <label for="calcLeads" class="calc-slider-label">Current Monthly Inbound Leads</label>
+                <span class="calc-slider-value" id="calcLeadsVal">100</span>
+              </div>
+              <input type="range" id="calcLeads" class="calc-range" min="10" max="1000" step="10" value="100" />
+            </div>
+            <div class="calc-slider-group" style="margin-bottom: 0;">
+              <div class="calc-slider-header">
+                <label for="calcValue" class="calc-slider-label">Average Customer Value (LTV)</label>
+                <span class="calc-slider-value" id="calcValueVal">$2,000</span>
+              </div>
+              <input type="range" id="calcValue" class="calc-range" min="100" max="20000" step="100" value="2000" />
+            </div>
+          </div>
+        </div>
+        <div class="calc-results fade-up fade-up-d2">
+          <div class="calc-result-item">
+            <div class="calc-result-title">Monthly Revenue Leaked</div>
+            <div class="calc-result-number" id="calcLeakedRevenue" style="color: #0f766e;">$20,000</div>
+          </div>
+          <hr style="border: none; border-top: 1px solid var(--border);" />
+          <div class="calc-result-item">
+            <div class="calc-result-title">Captured Revenue with ScaleOps (Annual)</div>
+            <div class="calc-result-number highlight" id="calcCapturedRevenue">$240,000</div>
+          </div>
+          <p class="calc-explanation">
+            *Calculations assume a standard response speed close rate increase from 5% (slow follow-ups) to 15% (under-60s AI replies), securing an additional 10% conversion rate across all inbound leads.
+          </p>
+          <a href="#contact" class="btn-primary" style="margin-top: 10px; width: 100%; justify-content: center;">
+            Stop the Leakage Now
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI In Action Simulator -->
+    <section id="demo" class="section-pad">
+      <div class="demo-wrap">
+        <div class="demo-copy fade-up">
+          <p class="section-label">AI In Action</p>
+          <h2 class="section-title">Your best salesperson<br/>never sleeps</h2>
+          <p class="section-sub">The moment a lead reaches out — through your site, Instagram, or any channel — your AI responds, qualifies them, and locks in a time. No delays. No dropped leads.</p>
+          <ul class="demo-features">
+            <li>
+              <div class="feat-icon">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              Responds to every inquiry in under 60 seconds — even at 3am
+            </li>
+            <li>
+              <div class="feat-icon">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              Qualifies leads with targeted questions before they reach you
+            </li>
+            <li>
+              <div class="feat-icon">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              Books calls directly into your calendar and sends reminders
+            </li>
+            <li>
+              <div class="feat-icon">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              Sounds like you — trained on your offer, tone, and objections
+            </li>
+          </ul>
+          <a href="#contact" class="btn-primary" style="margin-top:34px;display:inline-flex" id="demoCta">
+            Deploy This For My Business
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        
+        <div class="chat-window fade-up fade-up-d2">
+          <div class="chat-header">
+            <div class="chat-avatar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8.01" y2="16"/><line x1="16" y1="16" x2="16.01" y2="16"/></svg></div>
+            <div>
+              <div class="chat-name">ScaleOps AI · Your business</div>
+              <div class="chat-status">Active now</div>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="msg user">Hey, I saw your ad — how does pricing work?</div>
+            <div class="msg bot">Hey! Great question — before I give you numbers, I want to make sure we're actually a fit. Quick one: are you currently generating leads but struggling to follow up fast enough, or is the main issue getting leads in the first place?</div>
+            <div class="msg user">Both honestly. We're slow to respond and lose them.</div>
+            <div class="msg bot">That's exactly what we solve. Our clients typically 3–4× their booked calls within the first 30 days just by plugging in the AI response layer. Would it make sense to jump on a quick 20-min call this week so I can show you what the system looks like for your business?</div>
+            <div class="msg user">Yeah, let's do it</div>
+            <div class="msg bot">Perfect. Here's a link to grab a slot: scaleops.co/call — takes 30 seconds. Looking forward to it.</div>
+          </div>
+          <!-- Interactive Chat Input -->
+          <div class="chat-input-row">
+            <input type="text" id="chatInput" class="chat-input-fake" placeholder="Type a message (try 'pricing', 'fit', 'work')..." aria-label="Simulated chat message input" />
+            <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message">
+              <svg width="15" height="15" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Showcase (Motion Interactive) -->
+    <section id="video-showcase" class="section-pad">
+      <div class="video-intro fade-up" style="text-align:center; margin-bottom: 40px;">
+        <p class="section-label">The ScaleOps Experience</p>
+        <h2 class="section-title">Watch the Engine Run</h2>
+        <p class="section-sub" style="margin: 0 auto;">A glimpse into how we deploy fully automated client acquisition systems.</p>
+      </div>
+      <div class="video-container fade-up fade-up-d2" id="videoContainer">
+        <div class="video-cover"></div>
+        <div class="custom-play-cursor" id="customPlayCursor">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-pad">
+      <div class="section-header fade-up" style="text-align:center">
+        <p class="section-label">Client Results</p>
+        <h2 class="section-title">Numbers don't lie.</h2>
+        <p class="section-sub" style="margin:0 auto">What happens when a real acquisition system replaces guesswork.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up fade-up-d1">
+          <div class="testimonial-result">↑ 3.6× booked calls in 2 weeks</div>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p class="testimonial-text">"In the first two weeks we went from 3 booked calls a week to 11. The AI handles every inquiry and I just show up to the calls. I wish I'd done this 12 months ago."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <div class="author-name">Jordan M.</div>
+              <div class="author-role">Online Fitness Coach</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up fade-up-d2">
+          <div class="testimonial-result">↑ Conversion rate doubled</div>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p class="testimonial-text">"I was skeptical. But the AI sounds like me, qualifies properly, and the website they built converts like crazy. The whole thing just works together. Worth every penny."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SL</div>
+            <div>
+              <div class="author-name">Sofia L.</div>
+              <div class="author-role">Business Consultant</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up fade-up-d3">
+          <div class="testimonial-result">↑ Revenue doubled in 6 weeks</div>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p class="testimonial-text">"The content and automation working together is wild. Our posts pull in enquiries every day and the AI books them before we even see the message. Best investment we've made."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <div class="author-name">Ryan K.</div>
+              <div class="author-role">E-commerce Brand Owner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section-pad">
+      <div class="contact-wrap">
+        <div class="contact-copy fade-up">
+          <p class="section-label">Get Started</p>
+          <h2 class="section-title">Ready to build a pipeline<br/>that works without you?</h2>
+          <p class="section-sub">Book a free 20-minute strategy call. We'll map out exactly what your acquisition system should look like and what it would take to build it.</p>
+          <ul class="contact-perks">
+            <li>
+              <div class="perk-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+              System live in 48–72 hours
+            </li>
+            <li>
+              <div class="perk-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+              No long-term contracts
+            </li>
+            <li>
+              <div class="perk-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              Results guaranteed or we work for free
+            </li>
+            <li>
+              <div class="perk-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              Full onboarding and setup included
+            </li>
+          </ul>
+        </div>
+        <div class="fade-up fade-up-d2">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Alex" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Johnson" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Business Email</label>
+              <input type="email" id="email" placeholder="you@yourbusiness.com" required />
+            </div>
+            <div class="form-group">
+              <label for="brandName">Business / Brand</label>
+              <input type="text" id="brandName" placeholder="Your brand name" required />
+            </div>
+            <div class="form-group">
+              <label for="niche">What do you sell?</label>
+              <select id="niche" required>
+                <option value="" disabled selected>Select your niche</option>
+                <option>Coaching / Consulting</option>
+                <option>E-commerce / Products</option>
+                <option>Agency Services</option>
+                <option>SaaS / Tech</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bottleneck">Current biggest bottleneck?</label>
+              <textarea id="bottleneck" placeholder="e.g. We get leads but our follow-up is too slow and we lose them..."></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="formSubmitBtn">Book My Strategy Call →</button>
+            <p class="form-note">No pitch deck. No pressure. Just a straight conversation.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo" id="footerLogo">
+      <svg width="172" height="44" viewBox="0 0 172 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Signal S mark — Teal & Cyan gradient theme -->
+        <path d="M 38 10 A 18 18 0 0 0 6 10" fill="none" stroke="#0d9488" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+        <path d="M 34 16 A 13 13 0 0 0 10 16" fill="none" stroke="#0d9488" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+        <path d="M 30 22 A 8 8 0 0 0 14 22" fill="none" stroke="#0d9488" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="22" cy="22" r="2.8" fill="#0891b2"/>
+        <path d="M 14 22 A 8 8 0 0 0 30 22" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 10 28 A 13 13 0 0 0 34 28" fill="none" stroke="#0891b2" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+        <path d="M 6 34 A 18 18 0 0 0 38 34" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+        <!-- Wordmark -->
+        <text x="50" y="28" font-family="Sora, sans-serif" font-weight="800" font-size="19" letter-spacing="-0.8" fill="#0f172a">Scale<tspan fill="#0d9488">Ops</tspan></text>
+      </svg>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#services" id="footerServices">Services</a></li>
+      <li><a href="#system" id="footerSystem">How It Works</a></li>
+      <li><a href="#demo" id="footerDemo">Demo</a></li>
+      <li><a href="about.html" id="footerAbout">About Us</a></li>
+      <li><a href="#contact" id="footerContact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 ScaleOps. All rights reserved.</p>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="alert">
+    <span>✓</span> Submitted! We'll be in touch within 24 hours.
+  </div>
+
+  <!-- Video Lightbox Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-backdrop" id="videoModalCloseBg"></div>
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="videoModalCloseBtn" aria-label="Close video">✕</button>
+      <div class="video-frame-container">
+        <!-- AI Video goes here -->
+        <div class="video-placeholder-text">
+          <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-bottom: 12px; opacity: 0.5;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          <div>SaaS Promo Video Plays Here</div>
+          <div style="font-size: 0.9rem; opacity: 0.6; margin-top: 8px;">Replace with your AI generated MP4</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

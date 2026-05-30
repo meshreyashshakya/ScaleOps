@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — ScaleOps | Built for Growth, Powered by AI</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Learn about ScaleOps' philosophy, our team, and the custom AI-powered integrations we use to scale businesses." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+  
+  <!-- External Javascript (Deferred) -->
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Background Particle Network -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Nav -->
+  <header>
+    <nav>
+      <div class="logo" id="aboutLogo">
+        <a href="index.html" style="text-decoration:none">
+          <svg width="172" height="44" viewBox="0 0 172 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 38 10 A 18 18 0 0 0 6 10" fill="none" stroke="#0d9488" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+            <path d="M 34 16 A 13 13 0 0 0 10 16" fill="none" stroke="#0d9488" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+            <path d="M 30 22 A 8 8 0 0 0 14 22" fill="none" stroke="#0d9488" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="22" cy="22" r="2.8" fill="#0891b2"/>
+            <path d="M 14 22 A 8 8 0 0 0 30 22" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round"/>
+            <path d="M 10 28 A 13 13 0 0 0 34 28" fill="none" stroke="#0891b2" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+            <path d="M 6 34 A 18 18 0 0 0 38 34" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+            <text x="50" y="28" font-family="Sora, sans-serif" font-weight="800" font-size="19" letter-spacing="-0.8" fill="#0f172a">Scale<tspan fill="#0d9488">Ops</tspan></text>
+          </svg>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#services" id="navHomeServices">Services</a></li>
+        <li><a href="index.html#system" id="navHomeSystem">How It Works</a></li>
+        <li><a href="index.html#demo" id="navHomeDemo">Demo</a></li>
+        <li><a href="index.html#testimonials" id="navHomeTestimonials">Results</a></li>
+        <li><a href="index.html#contact" class="nav-cta" id="navHomeCta">Get a Strategy Call</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" id="mobileNavClose" role="button" aria-label="Close menu">✕</span>
+    <a href="index.html#services" onclick="closeMobileNav()">Services</a>
+    <a href="index.html#system" onclick="closeMobileNav()">How It Works</a>
+    <a href="index.html#demo" onclick="closeMobileNav()">Demo</a>
+    <a href="index.html#testimonials" onclick="closeMobileNav()">Results</a>
+    <a href="index.html#contact" onclick="closeMobileNav()">Get a Strategy Call</a>
+  </div>
+
+  <main>
+    <!-- About Hero -->
+    <section id="about-hero">
+      <div class="about-hero-content fade-up">
+        <p class="section-label">Our Story</p>
+        <h1 class="section-title" style="font-size: clamp(2.4rem, 5vw, 4rem); letter-spacing:-1.8px; margin-bottom: 24px;">
+          Built for growth.<br/>
+          <span class="highlight" style="background: linear-gradient(130deg, var(--accent) 0%, var(--accent2) 70%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Powered by AI.</span>
+        </h1>
+        <p class="section-sub" style="margin: 0 auto; max-width: 600px; font-weight: 500;">
+          We don't sell tools, templates, or consulting decks. We engineer end-to-end client acquisition machines that book calls while you run your business.
+        </p>
+      </div>
+    </section>
+
+    <!-- Philosophy & Mission -->
+    <section class="section-pad" id="philosophy" style="background: transparent;">
+      <div class="about-grid">
+        <div class="fade-up">
+          <p class="section-label">Our Philosophy</p>
+          <h2 class="section-title">The speed of business has changed.</h2>
+          <p class="section-sub" style="margin-bottom: 20px;">
+            Most companies lose 70% of their qualified leads simply due to slow responses. In the modern era, if you don't respond to a prospect within 5 minutes, they have already gone to a competitor.
+          </p>
+          <p class="section-sub">
+            We solve this with intelligent systems. We connect traffic generation (content and outreach) to conversational qualification (AI agents) and structured landing pages. The result is compounding growth that functions 24/7 without recruiter overhead or agent burnout.
+          </p>
+          <div class="philosophy-card">
+            <p class="philosophy-text">
+              "AI is not here to replace businesses. It is here to remove repetitive work, increase speed, and improve conversions."
+            </p>
+          </div>
+        </div>
+        <div class="about-image fade-up fade-up-d2">
+          <div class="system-visual" style="width:100%; border-color: rgba(13,148,136,0.18);">
+            <div class="pipeline-label">System Architecture</div>
+            <div class="pipeline-row">
+              <div class="pipeline-item" style="background: var(--bg);">
+                <div class="pipeline-item-left">
+                  <div class="pipeline-dot dot-blue"></div>
+                  <div class="pipeline-item-name">Top of Funnel (Content/Ads)</div>
+                </div>
+                <div class="pipeline-item-val">Attract</div>
+              </div>
+              <div class="pipeline-item" style="background: var(--bg);">
+                <div class="pipeline-item-left">
+                  <div class="pipeline-dot dot-purple"></div>
+                  <div class="pipeline-item-name">Inbound AI Rep (SMS/DMs)</div>
+                </div>
+                <div class="pipeline-item-val">Capture & Qualify</div>
+              </div>
+              <div class="pipeline-item" style="background: var(--bg);">
+                <div class="pipeline-item-left">
+                  <div class="pipeline-dot dot-green"></div>
+                  <div class="pipeline-item-name">CRM Booking (Cal.com/Zapier)</div>
+                </div>
+                <div class="pipeline-item-val">Book Call</div>
+              </div>
+            </div>
+            <div class="pipeline-total" style="background: var(--accent-soft); border-color: rgba(13,148,136,0.2);">
+              <div class="pipeline-total-label">ScaleOps Integration</div>
+              <div class="pipeline-total-val">100% Automated</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations Tech Stack -->
+    <section class="section-pad" id="stack">
+      <div class="section-header fade-up" style="text-align: center; margin-bottom: 50px;">
+        <p class="section-label">Integrations</p>
+        <h2 class="section-title">The Tools We Connect</h2>
+        <p class="section-sub" style="margin: 0 auto;">We link the industry's best automation and AI platforms together into a single, unified database system.</p>
+      </div>
+      <div class="stack-grid fade-up fade-up-d2">
+        <div class="stack-item">
+          <div class="stack-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg></div>
+          <div class="stack-name">OpenAI API</div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+          <div class="stack-name">Make.com</div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <div class="stack-name">Zapier</div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div class="stack-name">Cal.com / Calendly</div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+          <div class="stack-name">HubSpot / ActiveCampaign</div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="stack-name">Twilio SMS</div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div class="stack-name">Instantly / Smartlead</div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+          <div class="stack-name">ScaleOps Core CRM</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section-pad" id="team" style="background: transparent;">
+      <div class="section-header fade-up" style="text-align: center; margin-bottom: 50px;">
+        <p class="section-label">Our Team</p>
+        <h2 class="section-title">The Builders Behind ScaleOps</h2>
+        <p class="section-sub" style="margin: 0 auto;">A team of automation engineers, script writers, and sales conversion specialists.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card fade-up fade-up-d1">
+          <div class="team-avatar"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h3 class="team-name">Shreyash Shakya</h3>
+          <div class="team-role">Founder & Systems Architect</div>
+          <p class="team-bio">Obsessed with converting code into revenue. Spent 8 years designing complex API sequences for scaling SaaS and e-commerce companies.</p>
+        </div>
+        <div class="team-card fade-up fade-up-d2">
+          <div class="team-avatar"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <h3 class="team-name">Aatish Bajracharya</h3>
+          <div class="team-role">Lead Videographer</div>
+          <p class="team-bio">Master of the lens and post-production. Aatish creates high-converting SaaS advertisement videos and visual content that grab attention and drive inbound leads.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo" id="aboutFooterLogo">
+      <svg width="172" height="44" viewBox="0 0 172 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 38 10 A 18 18 0 0 0 6 10" fill="none" stroke="#0d9488" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+        <path d="M 34 16 A 13 13 0 0 0 10 16" fill="none" stroke="#0d9488" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+        <path d="M 30 22 A 8 8 0 0 0 14 22" fill="none" stroke="#0d9488" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="22" cy="22" r="2.8" fill="#0891b2"/>
+        <path d="M 14 22 A 8 8 0 0 0 30 22" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 10 28 A 13 13 0 0 0 34 28" fill="none" stroke="#0891b2" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+        <path d="M 6 34 A 18 18 0 0 0 38 34" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+        <text x="50" y="28" font-family="Sora, sans-serif" font-weight="800" font-size="19" letter-spacing="-0.8" fill="#0f172a">Scale<tspan fill="#0d9488">Ops</tspan></text>
+      </svg>
+    </div>
+    <ul class="footer-links">
+      <li><a href="index.html#services" id="footerServices">Services</a></li>
+      <li><a href="index.html#system" id="footerSystem">How It Works</a></li>
+      <li><a href="index.html#demo" id="footerDemo">Demo</a></li>
+      <li><a href="index.html#contact" id="footerContact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 ScaleOps. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
