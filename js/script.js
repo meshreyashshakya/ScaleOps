@@ -49,7 +49,7 @@ window.handleSubmit = async function(e) {
     problem: form[4].value,
   };
 
-  await fetch('https://hook.eu1.make.com/n1l6l660rh94xp7c4byieimi3tyr1g9u', {
+ await fetch('https://hook.eu1.make.com/nf688nna35jwn84gdebuof0y06xbhkxz', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
