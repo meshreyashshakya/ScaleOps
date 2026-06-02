@@ -37,14 +37,30 @@ if (nav) {
 }
 
 // ── Contact Form Handling ──
-window.handleSubmit = function(e) {
+window.handleSubmit = async function(e) {
   e.preventDefault();
+
+  const form = e.target;
+  const data = {
+    name: form[0].value,
+    email: form[1].value,
+    business: form[2].value,
+    revenue: form[3].value,
+    problem: form[4].value,
+  };
+
+  await fetch('https://hook.eu1.make.com/n1l6l660rh94xp7c4byieimi3tyr1g9u', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  });
+
   const toast = document.getElementById('toast');
   if (toast) {
     toast.classList.add('show');
     setTimeout(() => toast.classList.remove('show'), 4000);
   }
-  e.target.reset();
+  form.reset();
 };
 
 // ── Smooth Scroll for Anchors ──
