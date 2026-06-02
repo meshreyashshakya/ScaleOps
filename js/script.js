@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cost: "We build tailored lead structures. Our systems typically pay for themselves within 2 weeks by recovering missed leads. Would you like a customized quote on a quick call?",
     work: "We set up a 24/7 AI lead engine, high-converting pages, and content systems in 48-72 hours. Everything links directly to your CRM. Shall we discuss details?",
     fit: "We scale agencies, coaching brands, e-commerce, and high-ticket service operations. If you have traffic but struggle with quick follow-ups, we are a perfect fit!",
-    who: "We are ScaleOps. We build end-to-end AI client acquisition systems that scale businesses and book calls automatically. No manual effort required.",
+    who: "We are sentiop. We build end-to-end AI client acquisition systems that scale businesses and book calls automatically. No manual effort required.",
     demo: "You are talking to the demo right now! Our AI replies in under 3 seconds, qualifies leads, and drops booking links. We can launch this for your business in 48h."
   };
 
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     typing.className = 'msg bot typing-indicator';
     typing.style.opacity = '1';
     typing.style.color = 'var(--muted)';
-    typing.textContent = 'ScaleOps AI is typing...';
+    typing.textContent = 'sentiop AI is typing...';
     chatBody.appendChild(typing);
     chatBody.scrollTop = chatBody.scrollHeight;
 
