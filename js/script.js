@@ -17,9 +17,28 @@ const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
 const mobileNavClose = document.getElementById('mobileNavClose');
 
-if (hamburger && mobileNav && mobileNavClose) {
-  hamburger.addEventListener('click', () => mobileNav.classList.add('open'));
-  mobileNavClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+if (hamburger && mobileNav) {
+  // Toggle open/close when hamburger is tapped
+  hamburger.addEventListener('click', () => mobileNav.classList.toggle('open'));
+
+  // Close button (X) inside the menu
+  if (mobileNavClose) {
+    mobileNavClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+  }
+
+  // Close when any nav link inside the mobile menu is tapped
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => mobileNav.classList.remove('open'));
+  });
+
+  // Close when tapping outside the menu
+  document.addEventListener('click', (e) => {
+    if (mobileNav.classList.contains('open') &&
+        !mobileNav.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+      mobileNav.classList.remove('open');
+    }
+  });
 }
 
 window.closeMobileNav = function() {
