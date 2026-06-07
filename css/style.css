@@ -71,10 +71,10 @@ nav {
 }
 .logo span { color: var(--accent); }
 .logo img, .footer-logo img {
-  filter: invert(1) brightness(2);
-  height: 36px;
+  height: 48px;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 .nav-links { display: flex; gap: 2.2rem; list-style: none; align-items: center; }
 .nav-links a {
@@ -1242,4 +1242,15 @@ footer {
 @media (max-width: 900px) {
   .video-container { height: 350px; }
   .video-modal-close { top: 10px; right: 10px; z-index: 10; background: rgba(0,0,0,0.5); width: 40px; height: 40px; border-radius: 50%; font-size: 1.5rem; line-height: 1; display: flex; align-items: center; justify-content: center; }
+}
+.logo-img {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+.logo-img-footer {
+    height: 28px;
+    width: auto;
+    display: block;
 }
