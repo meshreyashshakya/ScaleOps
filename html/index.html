@@ -522,12 +522,18 @@
     <div class="video-modal-content">
       <button class="video-modal-close" id="videoModalCloseBtn" aria-label="Close video">✕</button>
       <div class="video-frame-container">
-        <!-- AI Video goes here -->
-        <div class="video-placeholder-text">
-          <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-bottom: 12px; opacity: 0.5;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          <div>SaaS Promo Video Plays Here</div>
-          <div style="font-size: 0.9rem; opacity: 0.6; margin-top: 8px;">Replace with your AI generated MP4</div>
-        </div>
+        <!-- Sentiop Promo Video -->
+        <video
+          id="promoVideo"
+          controls
+          playsinline
+          preload="metadata"
+          style="width:100%; max-height:80vh; border-radius:12px; display:block;"
+        >
+          <source src="../assets/video/sentiop-promo.mov" type="video/quicktime">
+          <source src="../assets/video/sentiop-promo.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>

@@ -342,10 +342,12 @@ document.addEventListener('DOMContentLoaded', () => {
       customCursor.style.transform = `translate(-50%, -50%) scale(0.5)`;
     });
 
-    // Click container -> open modal
+    // Click container -> open modal and play video
     videoContainer.addEventListener('click', () => {
       videoModal.classList.add('open');
-      document.body.style.overflow = 'hidden'; // prevent bg scroll
+      document.body.style.overflow = 'hidden';
+      const vid = document.getElementById('promoVideo');
+      if (vid) { vid.currentTime = 0; vid.play(); }
     });
   }
 
@@ -353,6 +355,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (videoModal) {
       videoModal.classList.remove('open');
       document.body.style.overflow = '';
+      const vid = document.getElementById('promoVideo');
+      if (vid) { vid.pause(); vid.currentTime = 0; }
     }
   }
 
