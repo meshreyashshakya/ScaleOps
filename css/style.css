@@ -1124,17 +1124,33 @@ footer {
   cursor: none; /* Hide default cursor when hovering */
 }
 
-.video-cover {
+.video-thumb-img {
   width: 100%;
   height: 100%;
-  background: url('../assets/images/video-thumbnail.png') center/cover no-repeat;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s;
   transform: scale(1.02);
 }
 
-.video-container:hover .video-cover {
+.video-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
+
+.video-container:hover .video-thumb-img {
   transform: scale(1);
-  filter: brightness(0.9);
+  filter: brightness(0.85);
+}
+
+.video-container:hover .video-play-overlay {
+  background: rgba(0,0,0,0.3);
 }
 
 .custom-play-cursor {
